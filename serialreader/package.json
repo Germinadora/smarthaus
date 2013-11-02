@@ -1,0 +1,11 @@
+{ 
+  "name": "serialreader",
+  "version": "0.1.0",
+  "dependencies":
+  {
+    "JSONStream": "0.7.1",
+    "event-stream": "3.0.16",
+    "serialport": "1.2.3",
+    "ddp": "0.3.4"
+  }
+}
