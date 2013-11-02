@@ -1,14 +1,14 @@
 DDPClient = require("ddp")
-SerialPort = require("SerialPort").SerialPort
+SerialPort = require("serialport").SerialPort
 JSONStream = require('JSONStream')
 es = require('event-stream')
 
-PORT = 3000
-HOST = "localhost"
-#PORT = 80
-#HOST = "smarthaus.meteor.com"
-SERIAL_PORT = '/dev/tty.usbmodem1411'
-#SERIAL_PORT = '/dev/ttyACM0'
+#PORT = 3000
+#HOST = "localhost"
+PORT = 80
+HOST = "smarthaus.meteor.com"
+#SERIAL_PORT = '/dev/tty.usbmodem1411'
+SERIAL_PORT = '/dev/ttyACM0'
 BAUD_RATE = 115200
 
 ddpclient = new DDPClient
