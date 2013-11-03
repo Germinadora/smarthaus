@@ -1,28 +1,28 @@
 
 
-== Building and Upload to the Arduino SmartThings 
+==Building and Upload to the Arduino SmartThings 
 
 cd devices/smarthings-arduino
 ino build
 ino upload
 
-== Starting the platform
+==Starting the platform
 
 cd platform
 meteor
 
-== Starting the Serial Reader
+==Starting the Serial Reader
 
 cd serialreader
 npm install
 coffee reader.coffee
 
-== Updating smarthaus.meteor.com
+==Updating smarthaus.meteor.com
 
 cd platform
 meteor deploy smarthaus.meteor.com
 
-== Configuring Serial Reader
+==Configuring Serial Reader
 
 To send data locally or to smarthaus.meteor.com
 
