@@ -1,5 +1,0 @@
-
-
-SerialPort = require("SerialPort")
-
-new SerialPort(
