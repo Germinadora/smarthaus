@@ -39,3 +39,10 @@ ddpclient.connect (error) ->
     console.error "Error connecting with platform"
   console.log "Connected to platform"
 
+ddpclient.on 'message', (msg) -> 
+  #console.log "DDP Client: " + msg
+  msg = JSON.parse(msg)
+  #console.log (msg.msg == "added" or msg.msg == "changed") #and msg.collection == "ports"
+  if ((msg.msg == "added" or msg.msg == "changed") and msg.collection == "ports")
+    port = ddpclient.collections?.ports?[msg.id]
+    console.log "Changed port ", port

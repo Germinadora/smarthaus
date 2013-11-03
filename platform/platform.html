@@ -3,11 +3,14 @@
 </head>
 
 <body>
-  {{> board}}
+  <div class="container">
+    {{> board}}
+  </div>
 </body>
 
 <template name="board">
 
   <h1>Temp: {{temp}}</h1>
+  <button id="toggle" class="btn">Toggle led</button>
 
 </template>
