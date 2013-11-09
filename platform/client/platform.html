@@ -5,12 +5,19 @@
 <body>
   <div class="container">
     {{> board}}
+    {{> temp_graph}}
   </div>
 </body>
 
 <template name="board">
-
   <h1>Temp: {{temp}}</h1>
   <button id="toggle" class="btn">Toggle led</button>
+</template>
 
+<template name="temp_graph">
+  <div id="chart">
+    {{#constant}}
+    <svg style="height: 400px;"></svg>
+    {{/constant}}
+  </div>
 </template>

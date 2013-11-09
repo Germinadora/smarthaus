@@ -1,10 +1,10 @@
-@Meassures = new Meteor.Collection "meassures"
+@Meassurements = new Meteor.Collection "meassures"
 @Ports = new Meteor.Collection "ports"
 
 Meteor.methods
   'add_measurement': (measurement) ->
     measurement.timestamp = new Date()
-    Meassures.insert measurement
+    Meassurements.insert measurement
     console.log measurement
   'toggle': ->
     console.log "Toggle"
