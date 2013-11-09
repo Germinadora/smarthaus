@@ -8,4 +8,5 @@ autopublish
 insecure
 preserve-inputs
 coffeescript
+d3
 bootstrap
