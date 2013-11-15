@@ -46,3 +46,4 @@ ddpclient.on 'message', (msg) ->
   if ((msg.msg == "added" or msg.msg == "changed") and msg.collection == "ports")
     port = ddpclient.collections?.ports?[msg.id]
     console.log "Changed port ", port
+    serialport.write 1
